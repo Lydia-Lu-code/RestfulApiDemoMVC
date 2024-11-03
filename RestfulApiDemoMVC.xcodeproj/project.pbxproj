@@ -21,6 +21,9 @@
 		5CE176A12CD3838C00D50DDE /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176A02CD3838C00D50DDE /* FavoriteManager.swift */; };
 		5CE176A32CD383A700D50DDE /* FavoriteVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176A22CD383A700D50DDE /* FavoriteVideosViewController.swift */; };
 		5CE176A52CD383D500D50DDE /* FavoriteVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176A42CD383D500D50DDE /* FavoriteVideoCell.swift */; };
+		5CE176C02CD7647600D50DDE /* LocalFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176BF2CD7647600D50DDE /* LocalFavoriteManager.swift */; };
+		5CE176C22CD764A300D50DDE /* FavoriteManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176C12CD764A300D50DDE /* FavoriteManagerProvider.swift */; };
+		5CE176C52CD7662500D50DDE /* FavoriteManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176C42CD7662500D50DDE /* FavoriteManageable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		5CE176A02CD3838C00D50DDE /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
 		5CE176A22CD383A700D50DDE /* FavoriteVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideosViewController.swift; sourceTree = "<group>"; };
 		5CE176A42CD383D500D50DDE /* FavoriteVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoCell.swift; sourceTree = "<group>"; };
+		5CE176BF2CD7647600D50DDE /* LocalFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFavoriteManager.swift; sourceTree = "<group>"; };
+		5CE176C12CD764A300D50DDE /* FavoriteManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagerProvider.swift; sourceTree = "<group>"; };
+		5CE176C42CD7662500D50DDE /* FavoriteManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManageable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			children = (
 				5CE1765E2CD3757200D50DDE /* AppDelegate.swift */,
 				5CE176602CD3757200D50DDE /* SceneDelegate.swift */,
+				5CE176C32CD765FB00D50DDE /* Protocols */,
 				5CE1767B2CD37B2E00D50DDE /* Networking */,
 				5CE176782CD37AE400D50DDE /* Models */,
 				5CE1767A2CD37B1400D50DDE /* Controllers */,
@@ -92,7 +99,6 @@
 				5CE176722CD3760100D50DDE /* Video.swift */,
 				5CE1767C2CD37B5300D50DDE /* NetworkError.swift */,
 				5CE1769E2CD3837000D50DDE /* FavoriteVideo.swift */,
-				5CE176A02CD3838C00D50DDE /* FavoriteManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +117,9 @@
 			children = (
 				5CE176622CD3757200D50DDE /* VideoViewController.swift */,
 				5CE176A22CD383A700D50DDE /* FavoriteVideosViewController.swift */,
+				5CE176A02CD3838C00D50DDE /* FavoriteManager.swift */,
+				5CE176BF2CD7647600D50DDE /* LocalFavoriteManager.swift */,
+				5CE176C12CD764A300D50DDE /* FavoriteManagerProvider.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +130,14 @@
 				5CE176742CD378CB00D50DDE /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		5CE176C32CD765FB00D50DDE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5CE176C42CD7662500D50DDE /* FavoriteManageable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,11 +213,14 @@
 			files = (
 				5CE176632CD3757200D50DDE /* VideoViewController.swift in Sources */,
 				5CE1767D2CD37B5300D50DDE /* NetworkError.swift in Sources */,
+				5CE176C52CD7662500D50DDE /* FavoriteManageable.swift in Sources */,
 				5CE1765F2CD3757200D50DDE /* AppDelegate.swift in Sources */,
 				5CE176A12CD3838C00D50DDE /* FavoriteManager.swift in Sources */,
 				5CE176A32CD383A700D50DDE /* FavoriteVideosViewController.swift in Sources */,
 				5CE176A52CD383D500D50DDE /* FavoriteVideoCell.swift in Sources */,
+				5CE176C22CD764A300D50DDE /* FavoriteManagerProvider.swift in Sources */,
 				5CE176752CD378CB00D50DDE /* NetworkManager.swift in Sources */,
+				5CE176C02CD7647600D50DDE /* LocalFavoriteManager.swift in Sources */,
 				5CE176612CD3757200D50DDE /* SceneDelegate.swift in Sources */,
 				5CE1769F2CD3837000D50DDE /* FavoriteVideo.swift in Sources */,
 				5CE176732CD3760100D50DDE /* Video.swift in Sources */,
